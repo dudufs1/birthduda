@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffe4f0;
+    color: #333;
+    text-align: center;
+}
+
+/* Seção Inicial */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ff80ab, #ffc0cb);
+    color: white;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+b{
+    color: #f02f6f;
+}
+.hero p {
+    font-size: 1.15rem;
+    margin-top: 10px;
+    max-width: 700px;
+}
+
+.tema-img {
+    position: absolute;
+    width: 150px;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.8;
+}
+
+@media (max-width:700px) {
+    .hero p {
+        max-width: 700px;
+    }
+}
+
+@media (max-width:500px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        margin: 1rem auto;
+        height: 400px;
+        max-width: 90vw;
+        font-size: 1.2rem;
+    }
+    .tema-img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) scale(1);
+        bottom: 10px;
+    }
+}
+
+@media (max-width:375px){
+    .tema-img{
+        left: 50%;
+        transform: translateX(-50%) scale(0.7);
+    }
+}
+
+
+/* Seção de Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 20px;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin-top: 15px;
+    font-size: 1.8rem;
+    color: #ff4081;
+}
+
+.card p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Seção Final */
+.final {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff80ab;
+    color: white;
+    position: relative;
+}
+
+.final h2 {
+    font-size: 2.5rem;
+}
+
+.final p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
